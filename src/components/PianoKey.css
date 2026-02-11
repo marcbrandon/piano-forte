@@ -1,0 +1,29 @@
+.piano-key {
+  position: absolute;
+  top: 0;
+  border-radius: 0 0 4px 4px;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+  transition: background-color 0.05s;
+}
+
+.piano-key--white {
+  background: linear-gradient(to bottom, #f8f8f8, #fff);
+  border: 1px solid #bbb;
+  z-index: 1;
+}
+
+.piano-key--white.piano-key--active {
+  background: linear-gradient(to bottom, #a8d4ff, #c8e4ff);
+}
+
+.piano-key--black {
+  background: linear-gradient(to bottom, #333, #111);
+  border: 1px solid #000;
+  z-index: 2;
+}
+
+.piano-key--black.piano-key--active {
+  background: linear-gradient(to bottom, #4a90d9, #2a70b9);
+}

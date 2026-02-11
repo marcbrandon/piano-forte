@@ -1,0 +1,11 @@
+.piano-scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.piano-keys {
+  position: relative;
+  margin: 0 auto;
+}
