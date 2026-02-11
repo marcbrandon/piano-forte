@@ -1,11 +1,45 @@
+.piano-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+  padding: 0;
+}
+
 .piano-scroll-container {
   overflow-x: auto;
   overflow-y: hidden;
-  width: 100%;
-  padding: 40px 0;
+  flex: 1;
+  min-width: 0;
+  touch-action: none;
 }
 
 .piano-keys {
   position: relative;
-  margin: 0 auto;
+}
+
+.piano-nav {
+  flex-shrink: 0;
+  width: 36px;
+  height: 60px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #aaa;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.piano-nav:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ddd;
+  border-color: #666;
+}
+
+.piano-nav:active {
+  background: rgba(255, 255, 255, 0.2);
 }
